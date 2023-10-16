@@ -15,9 +15,9 @@
   <div class="container">
     <header class="header">
       <!-- <img src="./images/desktop/image-hero.jpg" alt="bg" class="bg-header"> -->
-      <div class="bar">
+      <div class="block-header">
         <navbar class="navbar">
-          <div class="logo"><img src="./images/logo.svg" alt="logo"></div>
+          <div class=""><img src="./images/logo.svg" alt="logo"class="logo"></div>
           <div class="bt-toggle-open"><img src="./images/icon-hamburger.svg" alt="toggle-open"></div>
           <div class="bt-toggle-close"><img src="./images/icon-close.svg" alt="toggle-close"></div>
           <div class="menu">
@@ -28,13 +28,17 @@
             <div class="link-menu">Support</div>
           </div>
         </navbar>
-        <div class="info-head"><div class="info">Immersive experiences that deliver</div></div>
+        <div class="info-head"><div class="info"><p>Immersive experiences that deliver</p></div></div>
       </div>
     </header>
     <div class="container2">
       <article class="article">
-        <div class="article-image">
-          <img src="images/desktop/image-interactive.jpg" alt="">
+        <div class="">
+          <picture class="">
+            <source media="(max-width: 768px)" srcset="images/mobile/image-interactive.jpg">
+            <img src="images/desktop/image-interactive.jpg" alt="" class="article-image">
+          </picture>
+          <!-- <img src="images/desktop/image-interactive.jpg" alt=""> -->
         </div>
         <div class="article-content">
           <h1>The leader in interactive VR</h1>
@@ -49,47 +53,104 @@
         <div>
           Our creations
         </div>
-        <button>
+        <button class="bt-seeall">
           See  all
         </button>
       </section>
 
       <section class="catego">
         <div class="card-catego">
-          Deep earth
+          <picture class="">
+            <source media="(max-width: 768px)" srcset="./images/mobile/image-deep-earth.jpg">
+            <img src="./images/desktop/image-deep-earth.jpg" alt="" class="img-card-catego">
+          </picture>
+          <!-- <img src="./images/desktop/image-deep-earth.jpg" alt="" class="img-card-catego"> -->
+          <div class="title-card-catego">Deep earth</div>
         </div>
         <div class="card-catego">
-          Night arcade
+          <picture class="">
+            <source media="(max-width: 768px)" srcset="./images/mobile/image-night-arcade.jpg">
+            <img src="./images/desktop/image-night-arcade.jpg" alt="" class="img-card-catego">
+          </picture>
+          <!-- <img src="./images/desktop/image-night-arcade.jpg" alt="" class="img-card-catego"> -->
+          <div class="title-card-catego">Night arcade</div>
         </div>
         <div class="card-catego">
-          Soccer team VR
+          <picture class="">
+            <source media="(max-width: 768px)" srcset="./images/mobile/image-soccer-team.jpg">
+            <img src="./images/desktop/image-soccer-team.jpg" alt="" class="img-card-catego">
+          </picture>
+          <!-- <img src="./images/desktop/image-soccer-team.jpg" alt="" class="img-card-catego"> -->
+          <div class="title-card-catego">Soccer team VR</div>
         </div>
         <div class="card-catego">
-          The grid
+          <picture class="">
+            <source media="(max-width: 768px)" srcset="./images/mobile/image-grid.jpg">
+            <img src="./images/desktop/image-grid.jpg" alt="" class="img-card-catego">
+          </picture>
+          <!-- <img src="./images/desktop/image-grid.jpg" alt="" class="img-card-catego"> -->
+          <div class="title-card-catego">The<br>grid</div>
         </div>
         <div class="card-catego">
-          From up above VR
+          <picture class="">
+            <source media="(max-width: 768px)" srcset="./images/mobile/image-from-above.jpg">
+            <img src="./images/desktop/image-from-above.jpg" alt="" class="img-card-catego">
+          </picture>
+          <!-- <img src="./images/desktop/image-from-above.jpg" alt="" class="img-card-catego"> -->
+          <div class="title-card-catego">From up above VR</div>
         </div>
         <div class="card-catego">
-          Pocket borealis
+          <picture class="">
+            <source media="(max-width: 768px)" srcset="./images/mobile/image-pocket-borealis.jpg">
+            <img src="./images/desktop/image-pocket-borealis.jpg" alt="" class="img-card-catego">
+          </picture>
+          <!-- <img src="./images/desktop/image-pocket-borealis.jpg" alt="" class="img-card-catego"> -->
+          <div class="title-card-catego">Pocket borealis</div>
         </div>
         <div class="card-catego">
-          The curiosity
+          <picture class="">
+            <source media="(max-width: 768px)" srcset="./images/mobile/image-curiosity.jpg">
+            <img src="./images/desktop/image-curiosity.jpg" alt="" class="img-card-catego">
+          </picture>
+          <!-- <img src="./images/desktop/image-curiosity.jpg" alt="" class="img-card-catego"> -->
+          <div class="title-card-catego">The curiosity</div>
         </div>
         <div class="card-catego">
-          Make it fisheye
+          <picture class="">
+            <source media="(max-width: 768px)" srcset="./images/mobile/image-fisheye.jpg">
+            <img src="./images/desktop/image-fisheye.jpg" alt="" class="img-card-catego">
+          </picture>
+          <!-- <img src="./images/desktop/image-fisheye.jpg" alt="" class="img-card-catego"> -->
+          <div class="title-card-catego">Make it fisheye</div>
         </div>
         
       </section>
     </div>
     <div class="footer">
-      About
-      Careers
-      Events
-      Products
-      Support
-
-      © 2021 Loopstudios. All rights reserved.
+      <div class="container-footer">
+        <div class="footer-block1">
+          <div class=""><img src="./images/logo.svg" alt="logo" class="logo"></div>
+          <div class="block-footer-menu">
+            <div class="footer-menu">About</div>
+            <div class="footer-menu">Careers</div>
+            <div class="footer-menu">Events</div>
+            <div class="footer-menu">Products</div>
+            <div class="footer-menu">Support</div>
+          </div>
+        </div>
+        <div class="footer-block2">
+          <div class="block-logo-socail">
+            <img src="./images/icon-facebook.svg" alt="" class="icon-sosail">
+            <img src="./images/icon-twitter.svg" alt="" class="icon-sosail">
+            <img src="./images/icon-pinterest.svg" alt="" class="icon-sosail">
+            <img src="./images/icon-instagram.svg" alt="" class="icon-sosail">
+          </div>
+          <div class="copy-rifht">
+            © 2021 Loopstudios. All rights reserved.
+          </div>
+        </div>
+      </div>
+      <div></div>
     </div>
   </div>
 </body>
