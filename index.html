@@ -14,12 +14,25 @@
 <body>
   <div class="container">
     <header class="header">
-      <!-- <img src="./images/desktop/image-hero.jpg" alt="bg" class="bg-header"> -->
+      <div class="block-header-menu-mb" id="menu-mb">
+        <navbar class="navbar-mb">
+          <div class="container-nav-mb">
+            <div class=""><img src="./images/logo.svg" alt="logo"class="logo"></div>
+            <div class="bt-toggle-close" onclick="close_menu()"><img src="./images/icon-close.svg" alt="toggle-close"></div>
+          </div>
+          <div class="menu-mb">
+            <div class="link-menu">About</div>
+            <div class="link-menu">Careers</div>
+            <div class="link-menu">Events</div>
+            <div class="link-menu">Products</div>
+            <div class="link-menu">Support</div>
+          </div>
+        </navbar>
+      </div>
       <div class="block-header">
         <navbar class="navbar">
           <div class=""><img src="./images/logo.svg" alt="logo"class="logo"></div>
-          <div class="bt-toggle-open"><img src="./images/icon-hamburger.svg" alt="toggle-open"></div>
-          <div class="bt-toggle-close"><img src="./images/icon-close.svg" alt="toggle-close"></div>
+          <div class="bt-toggle-open" onclick="open_menu()"><img src="./images/icon-hamburger.svg" alt="toggle-open"></div>
           <div class="menu">
             <div class="link-menu">About</div>
             <div class="link-menu">Careers</div>
@@ -28,8 +41,9 @@
             <div class="link-menu">Support</div>
           </div>
         </navbar>
-        <div class="info-head"><div class="info"><p>Immersive experiences that deliver</p></div></div>
+        <!-- <div class="info-head"><div class="info"><p>Immersive experiences that deliver</p></div></div> -->
       </div>
+      <div class="info-head"><div class="info"><p>Immersive experiences that deliver</p></div></div>
     </header>
     <div class="container2">
       <article class="article">
@@ -153,6 +167,6 @@
       <div></div>
     </div>
   </div>
+  <script src="./assets/js/main.js"></script>
 </body>
-
 </html>

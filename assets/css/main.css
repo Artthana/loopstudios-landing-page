@@ -43,6 +43,9 @@ body{
     cursor: pointer;
     /* justify-content: start; */
 }
+.block-header-menu-mb{
+    display: none;
+}
 .block-header{
     width: 1120px;
     margin: auto;
@@ -95,7 +98,8 @@ body{
     /* display: flex;
     justify-content: flex-start; */
     /* padding: 30px; */
-    margin-top: 135px;
+    width: 1120px;
+    margin: auto;
 }
 .info{
     font-family: Josefin-Sans;
@@ -106,6 +110,7 @@ body{
     color: white;
     font-size: 80px;
     border: 3px solid white;
+    margin-top: 135px;
 }
 /* End Header */
 .container2{
@@ -270,8 +275,52 @@ body{
         display: none;
     }
     .info{
+        margin-top: 100px;
+        width: 85%;
+    }
+    .info-head{
+        width: 85%;
+        margin: auto;
+    }
+    .block-header-menu-mb{
+        display: none;
+        width:100%;
+        height: 100vh;
+        z-index: 150;
+        background-color: black;
+        position: fixed;
+        right: 0;
+    }
+    .active{
+        display: block;
+        animation-name: openMenu; 
+        animation-duration: 0.3s;
+        animation-fill-mode: forwards; 
+    }
+    .navbar-mb{
         width: 100%;
-        margin-top: 250px;
+        margin: auto;
+        position: absolute;
+    }
+    .bt-toggle-close{
+        display: block;
+    }
+    .container-nav-mb{
+        padding-top: 31px;
+        margin-top: 1%;
+        width: 85%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .menu-mb{
+        margin-top: 40%;
+    }
+    .link-menu{
+        margin-bottom: 30px;
+        font-size: 30px;
+
     }
     .container2{
         width: 85%;
@@ -310,9 +359,9 @@ body{
     .creations{
         display: none;
     }
-    .info-head{
+    /* .info-head{
         height: auto;
-    }
+    } */
     .info{
         position: absolute;
     }
@@ -334,6 +383,14 @@ body{
     .copy-rifht{
         margin-top: 20px
     }
+    @keyframes openMenu {
+        from {
+            height: 0px;
+        }
+        to {
+            height: 100vh; /* แทนค่าที่คุณต้องการสำหรับความสูงสุด */
+        }
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -343,7 +400,7 @@ body{
     .info{
         font-size: 35px;
         padding: 40px;
-        margin: 0;
+        /* margin: 0; */
     }
     .article{
         padding-top: 85px;
